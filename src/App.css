@@ -1,0 +1,141 @@
+html, body {
+    background-color: #282c34;
+    color: white;
+}
+
+.App {
+    text-align: center;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.App-header {
+    background-color: #282c34;
+    font-size: 28px;
+    padding: 15px;
+}
+
+section {
+    margin: 0 auto;
+    width: 250px;
+    position: relative;
+}
+
+section.score {
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.snack-bar {
+    margin-top: 60px;
+    width: 220px;
+}
+
+.slash-diagonalR2L, .slash-diagonalL2R,
+.slash-column1-down, .slash-column2-down, .slash-column3-down,
+.slash-row1-across, .slash-row2-across, .slash-row3-across {
+    content: "";
+    position: absolute;
+    border-top: 4px solid #000;
+    z-index: 1;
+}
+
+.slash-diagonalR2L, .slash-diagonalL2R {
+    width: 340px;
+    top: 127px;
+    left: -49px;
+}
+
+.slash-diagonalR2L {
+    transform: rotate(135deg);
+}
+
+.slash-diagonalL2R {
+    transform: rotate(45deg);
+}
+
+.slash-column1-down, .slash-column2-down, .slash-column3-down {
+    content: "";
+    position: absolute;
+    border-top: 4px solid #000;
+    transform: rotate(90deg);
+    width: 242px;
+    z-index: 1;
+}
+
+.slash-column1-down {
+    top: 127px;
+    left: -83px;
+}
+
+.slash-column2-down {
+    top: 127px;
+}
+
+.slash-column3-down {
+    top: 127px;
+    left: 83px;
+}
+
+.slash-row1-across, .slash-row2-across, .slash-row3-across{
+    content: "";
+    position: absolute;
+    border-top: 4px solid #000;
+    transform: rotate(180deg);
+    width: 242px;
+    z-index: 1;
+}
+
+.slash-row1-across {
+    top: 45px;
+}
+
+.slash-row2-across {
+    top: 127px;
+}
+
+.slash-row3-across {
+    top: 210px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+table th {
+    padding: 10px;
+}
+
+table td {
+    text-align: center;
+}
+
+.top-left, .bottom-right {
+    border: solid 1px black;
+}
+
+.top-left {
+    border-left-style: none;
+    border-top-style: none;
+}
+
+.bottom-right {
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
